@@ -939,4 +939,93 @@
     <script src="assets/js/main.js"></script>
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+<script>
+  function myGmail(){
+    window.location.href="mailto: yuktadodia@gmail.com";
+  }
+
+  function linkedin(){
+    window.location.href="https://www.linkedin.com/in/yukta-dodia-a26012181/";
+  }
+
+  function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Please fill the details");
+      return false;
+    }
+    else{
+      alert(" I will Contact you soon....\n or \n you can mail me :)");
+      window.open("mailto: youkadodia@gmail.com");
+    }
+  }
+  const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 12) {
+  greeting = "Good morning";
+} else if (hour < 16) {
+  greeting = "Good afternoon";
+} else if (hour < 21) {
+  greeting = "Good evening";
+} else{
+greeting = "Good night";
+
+}
+
+document.getElementById("time").innerHTML = greeting;
+</script>
+<script type="text/javascript">
+  document.getElementById("map").onclick = function () {
+      location.href = "map.html";
+  };
+</script>
+
+<script language="JavaScript">
+      
+  window.onload = function () {
+      document.addEventListener("contextmenu", function (e) {
+          e.preventDefault();
+      }, false);
+      document.addEventListener("keydown", function (e) {
+          //document.onkeydown = function(e) {
+          // "I" key
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+              disabledEvent(e);
+          }
+          // "J" key
+          if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+              disabledEvent(e);
+          }
+          // "S" key + macOS
+          if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+              disabledEvent(e);
+          }
+          // "U" key
+          if (e.ctrlKey && e.keyCode == 85) {
+              disabledEvent(e);
+          }
+          // "F12" key
+          if (event.keyCode == 123) {
+              disabledEvent(e);
+          }
+      }, false);
+      function disabledEvent(e) {
+          if (e.stopPropagation) {
+              e.stopPropagation();
+          } else if (window.event) {
+              window.event.cancelBubble = true;
+          }
+          e.preventDefault();
+          return false;
+      }
+  }
+//edit: removed ";" from last "}" because of javascript error
+</script>
+
+
+</html>
+>>>>>>> 659d99b06870e92c0771a54dd763aba27d0f8346
