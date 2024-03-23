@@ -1,7 +1,7 @@
 # YuktaDodia
 This is the website for Yukta Portfolio website.
 
-Website Link : Click [here](https://yuktadodia.co/)
+Website Link : Click [here](https://yuktadodia.in/)
 
 
 
